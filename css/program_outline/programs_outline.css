@@ -1,0 +1,247 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.banner{
+    position: relative;  
+    width: 100%;
+    height: 50vh;
+    background-color: gray;
+}
+
+.banner img{
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+}
+.banner .bg{
+    position: absolute;
+    top: 0; 
+    width: 100%;
+    height: 50vh;
+    background-color: black;
+    opacity: 0.6;
+}
+.banner .course-name{
+    position: absolute;
+    bottom: 35px;
+    left: 35px;
+    color: white;
+}
+.banner .course-name h1{
+    font-family: 'Cinzel', serif;
+}
+
+.tabs-container{
+    display: flex;
+    justify-content: center;
+}
+.tabs-container .tabs{
+    display: flex;
+}
+.tabs-container .tabs .tab-prgm{
+    background-color: #13325B;
+    margin: 15px;
+     cursor: pointer;
+     padding: 15px;
+     color: white;
+     font-weight: bold;
+     font-family: 'Bacasime Antique', serif;
+}
+.tabs-container .tabs .tab-adm{
+    background-color: lightgray;
+    margin: 15px;
+    cursor: pointer;
+    padding: 15px;
+    font-family: 'Bacasime Antique', serif;
+    font-weight: bold;
+}
+.tabs-container .tabs .tab-course{
+    background-color: lightgray;
+    margin: 15px;
+    cursor: pointer;
+    padding: 15px;
+    font-family: 'Bacasime Antique', serif;
+    font-weight: bold;
+}
+
+.big-container{
+    display: flex;
+    justify-content: center; 
+    margin: 15px 0px;
+}
+.big-container .container{
+    width: 80%;
+}
+.big-container .container .program-requirement{
+    display:flex;
+     flex-direction: row;
+     width: 100%;
+     justify-content: space-between;
+}
+/* ---- One Box of 1st tab ---- */
+.big-container .container .program-requirement .one-box{
+    width: 60%;
+}
+.big-container .container .program-requirement .one-box h1{
+    font-family: 'Cinzel', serif;
+}
+.big-container .container .program-requirement .one-box p{
+    font-family: 'Bacasime Antique', serif;
+}
+.big-container .container .program-requirement .one-box h3{
+    font-family: 'Cinzel', serif;
+}
+.big-container .container .program-requirement .one-box .big-box{
+    box-shadow: 0 5px 15px rgba(0,0,0,0.0);
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    border: 1px solid lightgrey;
+}
+/* ---- Second Box of 1st tab ---- */
+.big-container .container .program-requirement .second-box{
+    width: 30%;
+}
+.big-container .container .program-requirement .second-box .prgm-detail{
+    border: 1px solid lightgray;
+    margin: 15px 0px;
+     box-shadow: 0 5px 15px rgba(0,0,0,0.0);
+}
+.big-container .container .program-requirement .second-box .prgm-detail h3{
+    font-family: 'Cinzel', serif; 
+    text-align: center;
+}
+
+.big-container .container .program-requirement .second-box .prgm-detail .detail-box{
+    display: flex;
+    justify-content: space-around;
+    font-family:'Bacasime Antique', serif ;
+}
+
+.big-container .container .program-requirement .second-box .prgm-contact{
+    box-shadow: 0 5px 15px rgba(0,0,0,0.0);
+    font-family:'Bacasime Antique', serif ;
+    text-align: center;
+    border: 1px solid lightgray;
+    margin: 15px 0px;
+    padding-bottom: 15px;
+}
+
+/* ------  Second Tab ------------*/
+
+.big-container .container .admission{
+    display: flex;
+    font-family: 'Bacasime Antique', serif;
+    justify-content: space-between;
+}
+/*-----  2nd tab one box*/
+
+.big-container .container .admission .one-box{
+    width: 60%;
+}
+.big-container .container .admission .one-box h1,h3{
+    font-family: 'Cinzel', serif;
+}
+
+/*----------2nd tab second box---*/
+.big-container .container .admission .second-box{
+    width: 30%;
+}
+.big-container .container .admission .second-box .prgm-contact{
+    font-family:'Bacasime Antique', serif ;
+    text-align: center;
+    border: 1px solid lightgray;
+    margin: 15px 0px;
+    padding-bottom: 15px;
+}
+.big-container .container .admission .second-box .prgm-contact h3{
+    font-family: 'Cinzel', serif;
+}
+
+/*----third tab---*/
+.big-container .container .course{
+    display: flex;
+    flex-direction: column;
+}
+.big-container .container .course .semester{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.big-container .container .course .semester .sem{
+    width: 45%;
+    margin: 15px 0;
+}
+.big-container .container .course .semester .sem details{
+    border: 1px solid black;
+    font-family: 'Bacasime Antique', serif;
+}
+.big-container .container .course .semester .sem details summary{
+    background-color: #13325B;
+    padding: 15px;
+    font-family: 'Bacasime Antique', serif;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 850px) {
+
+    .banner .course-name h1{
+        font-size: 24px;
+    }
+    
+    .tabs-container .tabs .tab-prgm{
+        font-size: 14px;
+    }
+    .tabs-container .tabs .tab-adm{
+        font-size: 14px;
+    }
+    .tabs-container .tabs .tab-course{
+        font-size: 14px;
+    }
+
+
+    .big-container .container .program-requirement{
+         flex-direction: column;
+    }
+    /* ---- One Box of 1st tab ---- */
+    .big-container .container .program-requirement .one-box{
+        width: 100%;
+    }
+    .big-container .container .program-requirement .second-box{
+        width: 100%;
+    }
+
+
+    /*---- second tab---*/
+
+    .big-container .container .admission{
+        flex-direction: column;
+    }
+    
+    .big-container .container .admission .one-box{
+        width: 100%;
+    }
+
+    
+    /*----------2nd tab second box---*/
+    .big-container .container .admission .second-box{
+        width: 100%;
+    }
+
+    /*---third tab--*/
+
+    .big-container .container .course .semester{
+        flex-direction: column;
+    }
+    .big-container .container .course .semester .sem{
+        width: 100%;
+    }
+
+    .big-container .container .course h1{
+        font-size: 20px;
+    }
+}

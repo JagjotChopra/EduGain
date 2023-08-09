@@ -1,0 +1,93 @@
+body{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #13325B;
+    padding: 30px;
+}
+.container{
+    max-width: 300px;
+    width: 100%;
+    background: #fff;
+    padding: 40px 40px;
+    box-shadow: 0 5px 10px;
+}
+.container .form{
+    height: 100%;
+    width: 100%;
+    background: #fff;
+}
+form .form-content .input-boxes{
+    margin-top: 0px;
+}
+form .form-content .input-box{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    margin: 10px 0;
+    position: relative;
+}
+.form-content .input-box input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 0 30px;
+    border-bottom: 2px solid rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+.form-content .input-box input:focus,
+.form-content .input-box input:valid{
+    border-color: #13325B;
+}
+.form-content .input-box i{
+    position: absolute;
+    color: #13325B;
+}
+form .form-content .text a{
+    text-decoration: none;
+}
+form .form-content .text a:hover{
+    color: red;
+}
+form .form-content .button{
+    color: #fff;
+    margin-top: 30px;
+}
+form .form-content .button input{
+    color: #fff;
+    background: #13325B;
+    border-radius: 7px;
+    padding: 0;
+    cursor: pointer;
+}
+form .form-content .button input:hover{
+    background: #13325B;
+}
+form .form-content .login-form{
+    color: #13325B;
+    font-size: large;
+    display: flex;
+    font-weight: 1000;
+    /* justify-content: center; */
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-30px);
+    margin-bottom: 0;
+    margin-top: 0;
+}
+form .form-content .signup-form{
+    color: #13325B;
+    font-size: large;
+    display: flex;
+    font-weight: 1000;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-30px);
+    margin-bottom: 0;
+    margin-top: 0;
+}

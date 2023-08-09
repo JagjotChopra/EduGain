@@ -1,0 +1,52 @@
+footer{
+    display: flex; 
+    background-color: #13325B;
+    color: white;
+    justify-content: space-around;
+    padding: 50px 0px;
+}
+.address h3{
+    font-family: 'Cinzel', serif;
+}
+.icon-name{
+    display: flex;
+    align-items: center;
+}
+.address p,span{
+    font-family: 'Bacasime Antique', serif
+}
+
+.links h3{
+    font-family: 'Cinzel', serif;
+}
+.links li{
+    list-style-type: none;
+    text-align: center;
+    margin-bottom: 5px;
+    font-family: 'Bacasime Antique', serif
+}
+
+.newsletter h3{
+    font-family: 'Cinzel', serif;
+}
+
+ 
+@media only screen and (max-width: 850px) {
+    footer{
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background-color: #13325B;
+        color: white;
+        justify-content: center;
+        padding: 50px 0px;
+    }
+    .icon-name{
+        display: flex;
+        justify-content: center;
+    }
+    .social-media{
+        justify-content: center;
+    }
+}

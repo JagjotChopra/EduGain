@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/index/nav.css">
+    <link rel="stylesheet" href="css/index/footer.css">
+    <link rel="stylesheet" href="css/programs/programs.css">
+ 
+
+</head>
+
+<body>
+
+    <!--Navbar-->
+    <nav >
+        <div class="logo">
+            <img src="images/nav-logo.png" />
+            <div class="logo-heading">
+            <span style="color: #13325B;font-size: 20px;">EduGain</span>
+            <span style="color: #9F7944;font-size: 22px;">University</span>
+           </div>
+            
+        </div>
+
+        <div class="navitems">
+            <div onclick="closed()">
+                <i  class="fa fa-times cross" aria-hidden="true"></i>
+            </div>
+            <ul>
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="academic_unit.html">Academic Units</a></li>
+                <li><a href="programs.html" class="active">Programs</a></li>
+                <li><a href="contactus.html">Contact us</a></li>
+                <li><a href="login.html" target="_blank">Account</a></li>
+                <!-- <li ><a><i class="fa fa-language" aria-hidden="true"></a></i></li> -->
+            </ul>
+        </div>
+
+        <div class="nav-bar-icon" onclick="show()">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+    </nav>
+
+    <div class="banner" >
+        <img src="images/programs page/pexels-pixabay-207691.jpg"  />
+
+        <div class="bg"
+           >
+
+        </div>
+
+        <div class="course-name" >
+            <h1 >Program At EduGain University</h1>
+        </div>
+
+    </div>
+
+    <div class="outer-container">
+        <div class="container">
+
+            <div class="left-side">
+                <div class="inner-left-side">
+                    <h1>Academic Unit</h1>
+                    <div class="academic-unit-name" style="display: flex;align-items: center;">
+                        <input type="checkbox" value="unit1" />
+                        <label for="unit1">Faculty of Information Technology</label>
+                    </div>
+
+                    <div class="academic-unit-name" style="display: flex;align-items: center;">
+                        <input type="checkbox" value="unit2" />
+                        <label>Faculty of Arts</label>
+                    </div>
+
+                    <div class="academic-unit-name" style="display: flex;align-items: center;">
+                        <input type="checkbox" value="unit3" />
+                        <label>Faculty of Science</label>
+                    </div>
+
+                    <div class="academic-unit-name" style="display: flex;align-items: center;">
+                        <input type="checkbox" value="unit4" />
+                        <label>Faculty of Engineering</label>
+                    </div>
+
+                    <div class="academic-unit-name" style="display: flex;align-items: center;">
+                        <input type="checkbox" value="unit5" />
+                        <label>Faculty of Health Sciences</label>
+                    </div>
+
+                    <div class="academic-unit-name" style="display: flex;align-items: center;">
+                        <input type="checkbox" value="unit5" />
+                        <label>Faculty of Law</label>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="right-side">
+                <h1 style="text-align: center;margin-top: 25px;">Programs</h1>
+                <div>
+                    <i class="fa fa-th" id="grid" onclick="grid1()" aria-hidden="true"></i>
+                    <i class="fa fa-list-ol" id="list" onclick="list1()" aria-hidden="true"></i>
+
+                </div>
+                <div class="courses">
+                    <div class="course unit1">
+                        <div class="course-img">
+                                <img src="images/programs page/pexels-cottonbro-studio-5082579.jpg"
+                                />
+                            <div class="course-bg">
+
+                            </div>
+                            <div class="course-title">
+                                <h2 style="text-align: center;">Android Development </h2>
+                            </div>
+                            <div class="btn-box" >
+                                <a class="bt" href="programs_outline.html">Program Outline </a>
+                            </div>
+                        </div>
+
+
+                        <div class="course-dec">
+                            The Android Development Course is a comprehensive and hands-on program designed to equip
+                            participants with the essential skills to build and deploy Android applications. In this
+                            course, students will learn the fundamentals of Java and Kotlin programming languages, user
+                            interface design, data storage, and integration of APIs. With practical exercises and
+                            real-world projects, learners will gain proficiency in creating responsive and interactive
+                            apps, ensuring compatibility across various devices and Android versions. Whether for
+                            beginners or experienced developers, this 100-hour course offers an in-depth understanding
+                            of the Android ecosystem, enabling students to launch their career in mobile app development
+                            successfully.
+                        </div>
+                    </div>
+
+                    <div class="course unit1">
+                        <div class="course-img" >
+                            <img src="images/programs page/pexels-format-1029757.jpg"  />
+                            <div class="course-bg">
+
+                            </div>
+                            <div class="course-title" >
+                                <h2 style="text-align: center;">Web Development </h2>
+                            </div>
+                            <div class="btn-box" >
+                                <a class="bt" href="#">Program Outline </a>
+                            </div>
+                        </div>
+
+
+                        <div class="course-dec" >
+                            The Web Development Course is a comprehensive and dynamic program that empowers participants
+                            with the knowledge and skills needed to design and create engaging websites. Throughout this
+                            course, students will learn HTML, CSS, and JavaScript, gaining a solid foundation in
+                            front-end development. Additionally, they will explore server-side programming languages
+                            such as PHP or Python and learn to work with databases. Practical projects and hands-on
+                            exercises provide a well-rounded understanding of responsive design, user experience, and
+                            web optimization. This 100-hour course is ideal for aspiring web developers, equipping them
+                            to build innovative and user-friendly websites that meet modern industry standards.
+                        </div>
+                    </div>
+
+                    <div class="course unit1">
+                        <div class="course-img" >
+                            <img src="images/programs page/pexels-thisisengineering-3861958 (1).jpg"
+                                />
+                            <div class="course-bg"
+                                >
+
+                            </div>
+                            <div class="course-title" >
+                                <h2 style="text-align: center;">Computer Science & Enginer </h2>
+                            </div>
+                            <div class="btn-box" >
+                                <a class="bt" href="#">Program Outline </a>
+                            </div>
+                        </div>
+
+
+                        <div class="course-dec" >
+                            The Computer Science and Engineering program is a comprehensive and cutting-edge course that
+                            prepares students for a thriving career at the forefront of technology. This dynamic
+                            curriculum covers a wide range of topics, including algorithms, data structures, programming
+                            languages, hardware, and software design. Participants will gain hands-on experience in
+                            software development, system analysis, and computer architecture. Emphasizing
+                            problem-solving and critical thinking, this 100-credit course fosters creativity and
+                            innovation. Graduates will be equipped with the expertise to develop innovative software
+                            solutions, design robust computer systems, and contribute significantly to advancements in
+                            technology, making a significant impact on the digital landscape. </div>
+                    </div>
+
+                    <div class="course unit1">
+                        <div class="course-img" >
+                            <img src="images/programs page/pexels-pixabay-38544.jpg"  />
+                            <div class="course-bg" 
+                                >
+
+                            </div>
+                            <div class="course-title"  >
+                                <h2 style="text-align: center;">UI/UX Designer </h2>
+                            </div>
+                            <div class="btn-box" >
+                                <a class="bt" href="#">Program Outline </a>
+                            </div>
+                        </div>
+
+
+                        <div class="course-dec" >
+                            The UI/UX Designer Course is a comprehensive and hands-on program that empowers participants
+                            to create visually stunning and user-centric digital experiences. Through this 100-hour
+                            course, students will delve into the principles of user interface (UI) design, mastering
+                            tools like Adobe XD, Sketch, or Figma to craft captivating layouts and prototypes. They will
+                            also explore user experience (UX) methodologies, conducting research, usability testing, and
+                            creating intuitive interactions. With practical projects and real-world applications,
+                            learners will develop the skills to design seamless, responsive, and accessible interfaces
+                            for websites and mobile apps, making them well-equipped to embark on a successful career in
+                            UI/UX design.
+                        </div>
+
+                    </div>
+
+                    <div class="course unit2">
+                        <div class="course-img" >
+                            <img src="images/programs page/pexels-pixabay-38544.jpg"  />
+                            <div class="course-bg" 
+                                >
+
+                            </div>
+                            <div class="course-title"  >
+                                <h2 style="text-align: center;">Constitutional Law and Governance </h2>
+                            </div>
+                            <div class="btn-box" >
+                                <a class="bt" href="#">Program Outline </a>
+                            </div>
+                        </div>
+                        <div class="course-dec">
+                            This course explores the foundational principles of a country's constitution, the structure
+                            of government, and the distribution of powers among different branches of government.
+                            Students study concepts such as fundamental rights, separation of powers, and judicial
+                            review.government, and the distribution of powers among different branches of government.
+                            Students study concepts such as fundamental rights, separation of powers, and judicial
+                            review </div>
+                    </div>
+
+                    <div class="course unit2">
+                        <div class="course-img" >
+                            <img src="images/programs page/pexels-pixabay-38544.jpg"  />
+                            <div class="course-bg" 
+                                >
+
+                            </div>
+                            <div class="course-title"  >
+                                <h2 style="text-align: center;">Criminal Law and Procedure </h2>
+                            </div>
+                            <div class="btn-box" >
+                                <a class="bt" href="#">Program Outline </a>
+                            </div>
+                        </div>
+                        <div class="course-dec" >
+                            This course examines the laws related to criminal offenses, the elements of a crime,
+                            criminal liability, defenses, and the procedures involved in the criminal justice system,
+                            including investigation, trial, and sentencing defenses, and the procedures involved in the criminal justice system,
+                            including investigation, trial, and sentencing. </div>
+                    </div>
+
+                    <div class="course unit2">
+                        <div class="course-img" >
+                            <img src="images/programs page/pexels-pixabay-38544.jpg"  />
+                            <div class="course-bg" 
+                                >
+
+                            </div>
+                            <div class="course-title"  >
+                                <h2 style="text-align: center;">Contract Law and Negotiation</h2>
+                            </div>
+                            <div class="btn-box" >
+                                <a class="bt" href="#">Program Outline </a>
+                            </div>
+                        </div>
+                        <div class="course-dec" >
+                            Students learn about the formation, interpretation, and enforcement of contracts. The course
+                            covers essential contract elements, breach of contract, remedies, and the negotiation skills
+                            required for successful business transactions elements, breach of contract, remedies, and the negotiation skills
+                            required for successful business transactions. </div>
+                    </div>
+
+                    <div class="course unit2">
+                        <div class="course-img" >
+                            <img src="images/programs page/pexels-pixabay-38544.jpg"  />
+                            <div class="course-bg" 
+                                >
+
+                            </div>
+                            <div class="course-title"  >
+                                <h2 style="text-align: center;">International Law and Diplomacy</h2>
+                            </div>
+                            <div class="btn-box" >
+                                <a class="bt" href="#">Program Outline </a>
+                            </div>
+                        </div>
+
+                        <div class="course-dec">
+                            This course covers the principles and norms governing relations between sovereign states and
+                            international organizations. Students study topics such as treaties, human rights,
+                            humanitarian law, and the resolution of international disputes defenses, and the procedures involved in the criminal justice system,
+                            including investigation, trial, and sentencing..</div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+ <!-- footer -->
+ <footer  >
+
+    <div class="address">
+        <div class="logo">
+            <div class="icon-name" >
+            <i class="fa fa-university" style="font-size: 24px;margin-right: 5px;" aria-hidden="true"></i>
+            <h3>EduGain University</h3>
+        </div>
+            <p>Choose The EduGain Experience</p>
+            <span>Join us to make your college experience unforgettable</span>
+        </div>
+    </div>
+
+    <div class="links">
+        <h3>Important Links</h3>
+        <div class="main" style="display: flex;justify-content: space-around;">
+            <div>
+                <li><a href="index.html" style="text-decoration: none;color: white;">Home</a></li>
+                <li><a href="about.html" style="text-decoration: none;color: white;">About us</a> </li>
+                <li><a href="academic_unit.html" style="text-decoration: none;color: white;">Academic</a></li>
+            </div>
+            <div>
+                <li><a href="contactus.html" style="text-decoration: none;color: white;">Contact us</a></li>
+                <li><a href="login.html" style="text-decoration: none;color: white;">Account</a></li>
+            </div>
+        </div>
+        
+        
+    </div>
+
+    <div class="newsletter">
+        <h3>NewsLetter</h3>
+        <p>Get the Latest EduGain news devlieved to your inbox</p>
+        <input type="text" placeholder="Enter Your Email Address" style="padding: 5px;background: transparent;color: white;border-color: white;margin-right: 15px;width: 50%;" />
+        <i class="fa fa-paper-plane" style="cursor: pointer;" aria-hidden="true"></i>
+
+        <div class="social-media Link" style="display: flex;">
+            <i class="fa fa-instagram" style="font-size: 24px;margin-right: 25px;margin-top: 25px;cursor: pointer;" aria-hidden="true"></i>
+            <i class="fa fa-facebook-official" style="font-size: 24px;margin-right: 25px;margin-top: 25px;cursor: pointer;" aria-hidden="true"></i>
+            <i class="fa fa-linkedin-square" style="font-size: 24px;margin-right: 25px;margin-top: 25px;cursor: pointer;" aria-hidden="true"></i>
+
+        </div>
+    </div>
+</footer>
+
+
+
+    <script>
+        var mb = window.matchMedia("(max-width: 800px)")
+        var list = document.getElementById("list");
+        var grid = document.getElementById("grid");
+        var courses = document.getElementsByClassName("courses");
+        var course = document.querySelectorAll(".course");
+
+        // var checkbox=document.getElementsByClassName('input');
+
+        // checkbox.forEach(element => {
+        //     if(element.checked==true){
+        //         alert(element.value)
+        //     }
+        // });
+        var checkbox = document.querySelectorAll('input');
+        var state="grid"
+        run();
+function run(){
+    console.log("run function work")
+    checkbox.forEach((item) => {
+
+item.addEventListener('change', () => {
+    if (item.checked == true) {
+        console.log(item.value)
+        if (item.value == "unit1") {
+            var unit1 = document.querySelectorAll(".unit1");
+            console.log(unit1.length)
+            var unit2 = document.querySelectorAll(".unit2");
+            console.log(unit2.length)
+            unit1.forEach((unit) => {
+               
+                unit.style.display = "flex";
+                unit.style.flexDirection = "column";
+                unit.style.width = "45%"
+                unit.children[0].style.width = "100%"
+                unit.children[1].style.width = "auto"
+            
+
+            })
+
+            unit2.forEach((unit) => {
+                unit.style.display = "none";
+            })
+
+        }
+        else {
+            var unit1 = document.querySelectorAll(".unit1");
+            console.log(unit1.length)
+            var unit2 = document.querySelectorAll(".unit2");
+            console.log(unit2.length)
+            unit2.forEach((unit) => {
+               
+                unit.style.display = "flex";
+                unit.style.flexDirection = "column";
+                unit.style.width = "45%"
+                unit.children[0].style.width = "100%"
+                unit.children[1].style.width = "auto"
+            
+
+            })
+
+            unit1.forEach((unit) => {
+                unit.style.display = "none";
+            })
+        }
+        run2(state);
+    }
+    else {
+
+    }
+})
+
+
+
+})
+
+
+}
+    
+
+        
+
+        if (mb.matches) {
+            list.style.display = "none"
+            grid.style.display = "none"
+        }
+
+        list.style.opacity = "0.5"
+
+        function list1() {
+            list.style.opacity = "1"
+            grid.style.opacity = "0.5"
+
+            courses[0].style.flexDirection = "column";
+
+            course.forEach((c) => {
+                c.style.display = "flex"
+                c.style.flexDirection = "row"
+                c.style.width = "100%"
+                c.style.marginBottom = "55px"
+                c.children[0].style.width = "40%"
+                c.children[1].style.width = "50%"
+                c.children[1].style.height = "170px"
+                c.children[1].style.overflow = "hidden"
+
+            })
+            state="list"
+            run2(state);
+        }
+
+        function grid1() {
+            list.style.opacity = "0.5"
+            grid.style.opacity = "1"
+
+            courses[0].style.flexDirection = "row";
+
+            course.forEach((c) => {
+
+                if (mb.matches) {
+                    c.children[1].style.height = "210px"
+                    c.children[1].style.overflow = "hidden"
+                }
+                else {
+                    c.style.display = "flex"
+                    c.style.flexDirection = "column"
+                    c.style.width = "45%"
+                    c.style.marginBottom = "25px"
+                    c.children[0].style.width = "100%"
+                    c.children[1].style.width = "auto"
+                    c.children[1].style.height = "170px"
+                    c.children[1].style.overflow = "hidden"
+                }
+            })
+            state="grid"
+            run2(state);
+        }
+
+        
+      
+
+
+function run2(state){
+    console.log("run function work")
+    checkbox.forEach((item) => {
+
+
+    if (item.checked == true) {
+        console.log(item.value)
+        if (item.value == "unit1") {
+            var unit1 = document.querySelectorAll(".unit1");
+            console.log(unit1.length)
+            var unit2 = document.querySelectorAll(".unit2");
+            console.log(unit2.length)
+            unit1.forEach((unit) => {
+                if(state=='grid'){
+                unit.style.display = "flex";
+                unit.style.flexDirection = "column";
+                unit.style.width = "45%"
+                unit.children[0].style.width = "100%"
+                unit.children[1].style.width = "auto"
+            }
+            else{
+                unit.style.display = "flex"
+                unit.style.flexDirection = "row"
+                unit.style.width = "100%"
+                unit.style.marginBottom = "55px"
+                unit.children[0].style.width = "40%"
+                unit.children[1].style.width = "50%"
+                unit.children[1].style.height = "170px"
+                unit.children[1].style.overflow = "hidden"
+            }
+
+            })
+
+            unit2.forEach((unit) => {
+                unit.style.display = "none";
+            })
+
+        }
+        else {
+            var unit1 = document.querySelectorAll(".unit1");
+            console.log(unit1.length)
+            var unit2 = document.querySelectorAll(".unit2");
+            console.log(unit2.length)
+            unit2.forEach((unit) => {
+                if(state=='grid'){
+                unit.style.display = "flex";
+                unit.style.flexDirection = "column";
+                unit.style.width = "45%"
+                unit.children[0].style.width = "100%"
+                unit.children[1].style.width = "auto"
+            }
+            else{
+                unit.style.display = "flex"
+                unit.style.flexDirection = "row"
+                unit.style.width = "100%"
+                unit.style.marginBottom = "55px"
+                unit.children[0].style.width = "40%"
+                unit.children[1].style.width = "50%"
+                unit.children[1].style.height = "170px"
+                unit.children[1].style.overflow = "hidden"
+            }
+
+            })
+
+            unit1.forEach((unit) => {
+                unit.style.display = "none";
+            })
+        }
+
+    }
+    else {
+
+    }
+
+
+
+})
+
+
+}
+    
+
+        grid1();
+
+        function show(){
+    var nm=document.getElementsByClassName("navitems");
+     nm[0].style.right="0%";
+}
+function closed(){
+    var nm=document.getElementsByClassName("navitems");
+     nm[0].style.right="-50%";
+}
+
+    </script>
+</body>
+
+</html>

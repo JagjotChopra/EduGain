@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduGain University</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bacasime+Antique&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/index/nav.css" >
+    <link rel="stylesheet" href="css/index/main.css" >
+ 
+    <link rel="stylesheet" href="css/index/info_section.css" >
+    <link rel="stylesheet" href="css/index/academic_section.css" >
+    <link rel="stylesheet" href="css/index/event_news.css" >
+    <link rel="stylesheet" href="css/index/choose_us_section.css" >
+    <link rel="stylesheet" href="css/index/footer.css" >
+   <style>
+        body{
+         box-sizing: border-box;
+         margin: 0;
+         padding: 0; 
+         /* background-color: #FAF9F6; */
+        }
+    </style>
+</head>
+<body>
+    
+    <!--Navbar-->
+     <nav >
+        <div class="logo">
+            <img src="images/nav-logo.png" />
+            <div class="logo-heading">
+            <span style="color: #13325B;font-size: 20px;">EduGain</span>
+            <span style="color: #9F7944;font-size: 22px;">University</span>
+           </div>
+            
+        </div>
+
+        <div class="navitems">
+            <div onclick="closed()">
+                <i  class="fa fa-times cross" aria-hidden="true"></i>
+            </div>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="academic_unit.html">Academic Units</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="contactus.html">Contact us</a></li>
+                <li><a href="login.html" target="_blank">Account</a></li>
+                <!-- <li ><a><i class="fa fa-language" aria-hidden="true"></a></i></li> -->
+            </ul>
+        </div>
+
+        <div class="nav-bar-icon" onclick="show()">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+    </nav>
+    
+
+    <!-- Main Section Crousel [ Slider ] -->
+    <main id="main-container">
+        <div class="sliders">
+            <div class="slider">
+                <img id="banner-img" src="images/pexels-stanley-morales-1454360.jpg"/>
+                <div class="bg-color">
+
+                </div>
+
+                <div class="banner-text">
+                    <h1>Welcome to EduGain University</h1>
+                    <p>A place to discover different paths and build your success</p>
+                    <a class="btn" style="text-decoration: none;" href="academic_unit.html" >Expore More</a>
+                </div>
+            </div>
+            <div class="slider">
+                <img id="banner-img" src="images/pexels-matthis-volquardsen-2305098.jpg" />
+                <div class="bg-color">
+
+                </div>
+
+                <div class="banner-text">
+                    <h1>A Unique Experience.</h1>
+                    <p>EduGain is more than just a place to get an education</p>
+                    <a class="btn" style="text-decoration: none;" href="about.html">Expore More</a>
+                </div>
+            </div>
+            <div class="slider">
+                <img id="banner-img" src="images/pexels-ivan-samkov-5676744.jpg" />
+                <div class="bg-color">
+
+                </div>
+
+                <div class="banner-text">
+                    <h1>Premium Scholarships</h1>
+                    <p>The perfect way to create a future</p>
+                    <a class="btn" style="text-decoration: none;" href="about.html" >Expore More</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="btnn">
+            <i onclick="back()" style="color: white; font-size: 25px;position: absolute;left:15px;top: 50%;cursor: pointer;" class="fa fa-chevron-left" aria-hidden="true"></i></button>
+            <i onclick="next()" style="color: white; font-size: 25px;position: absolute;right:15px;top: 50%;cursor: pointer;" class="fa fa-chevron-right" aria-hidden="true"></i></button>
+        </div>
+    </main>
+      
+    <!-- Shaping the Future Section -->
+    <section class="info-box">
+        <div class="info-container" >
+                <div class="info-box1" >
+                    <div class="img-1" >
+                        <img  src="images/pexels-gustavo-fring-4172970 (1).jpg" />
+                    </div>    
+                    
+                    
+                    <div class="img-2" >
+                        <img  src="images/pexels-anastasiya-gepp-1462630.jpg" />
+                    </div>
+
+
+                </div>
+
+                <div class="info-box2">
+                    <img  src="images/university-logo.png" style="margin-top: 25px;"  width="200px" height="200px" />
+                    <h1>Shaping the Future</h1>
+                    <p>At EduGain University, we are moving boldly - and concertedly - to expand tomorrow's frontiers. We believe that we have the power to shape the future, for the better</p>
+                </div>
+        </div>
+    </section>
+
+    <!-- upcoming events and news section -->
+    <section class="event-news-box" >
+        <div class="event-news-container">
+            <div class="event-news-box1">
+                <h1  style="color: #13325B;">Upcoming Events</h1>
+               <a href="#"> <p style="text-align: right;color: #13325B;margin-right: 15px;">See All</p></a>
+                <div class="events">
+                    <div class="event">
+                        <div class="event-date" >
+                            <div class="calendar" style="background-color: #13325B;color: white;">
+                                <p >1</p>
+                                <p >Sept</p>
+                            </div>
+                            
+                        </div>
+                        <div class="event-info" >
+                            <p><span style="font-weight: bold;">Freshers' Week:</span> A week-long series of parties, activities, and information sessions designed to welcome and assist new students in adjusting to university life.</p>
+                        </div>
+                    </div>
+
+                    <div class="event" >
+                        <div class="event-date" >
+                            <div class="calendar" style="background-color: #9F7944;color: white;" >
+                                <p >25</p>
+                                <p >Sept</p>
+                            </div>
+                            
+                        </div>
+                        <div class="event-info" style="text-align: left;">
+                            <p ><span style="font-weight: bold;">Gaming Tournament:</span> Competitive video game tournaments, ranging from esports to casual gaming.</p>
+                        </div>
+                    </div>
+
+                    <div class="event" >
+                        <div class="event-date" >
+                            <div class="calendar" style="background-color: #13325B;color: white;" >
+                                <p >2</p>
+                                <p >OCT</p>
+                            </div>
+                            
+                        </div>
+                        <div class="event-info" >
+                            <p ><span style="font-weight: bold;">Health and Wellness Fair:</span> Promoting physical and mental well-being through interactive activities and educational sessions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="event-news-box2" >
+                <h1 >Latest News</h1>
+                <a href="#"><p style="width: 100%; text-align: right;color: #13325B;margin-right: 15px;">See All</p></a>
+                <marquee direction="up">
+                    <ul>
+
+                        <li >
+                            <img src="images/news section/pexels-alexander-grey-1152500.jpg" />
+                            <div >
+                                <h3>Enrollment Milestone</h3>
+                                <p>Campus Celebrates Record Enrollment, Embraces Diversity- College community rejoices as student population hits all-time high.</p>
+                            </div>
+                        </li>
+                        <li >
+                            <img src="images/news section/pexels-mikael-blomkvist-6476783.jpg" />
+                            <div >
+                                <h3>Inspirational Speaker</h3>
+                                <p>"Renowned Speaker Series Engages Minds, Inspires Change" - Influential leaders ignite discussions on pressing issues.</p>
+                            </div>
+                        </li>
+                        <li >
+                            <img src="images/news section/pexels-nataliya-vaitkevich-6532373.jpg" />
+                            <div >
+                                <h3>Award-winning Research</h3>
+                                <p>"Cutting-edge Research Project Earns Prestigious National Award" - Faculty's groundbreaking study recognized for its innovative contributions.</p>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </marquee>
+            </div>
+        </div>
+    </section>
+
+    <!--Academic Unit Section -->
+    <section class="academic-box">
+        <div class="academic-container">
+            <h1 >Academic Units AT EduGain University</h1>
+           
+            <div class="units">
+                <div class="unit-list">
+                   <a href="programs.html" style="text-decoration: none;color: black;" > <img src="images/academic section image/pexels-tranmautritam-326508.jpg" />
+                    <h3 >Faculty of Information Technology</h3>
+                </a>
+                </div>
+
+                <div class="unit-list" >
+                    <a href="programs.html"  style="text-decoration: none;color: black;" >  <img src="images/academic section image/pexels-pixabay-256455.jpg"  />
+                    <h3 >Faculty of Arts</h3>
+                </a>
+                </div>
+
+                <div class="unit-list">
+                    <a href="programs.html"  style="text-decoration: none;color: black;" ></a><img src="images/academic section image/pexels-karolina-grabowska-4047073.jpg"/>
+                    <h3 >Faculty of Health Sciences</h3>
+                </a>
+                </div>
+
+                <div class="unit-list" >
+                    <a href="programs.html"  style="text-decoration: none;color: black;" ></a><img src="images/academic section image/pexels-sora-shimazaki-5669602.jpg"  />
+                    <h3 >Faculty of Law</h3>
+                </a>
+                </div>
+            </div>
+    
+          
+        </div>
+
+        <div class="view-all-btn">
+            <a  href="academic_unit.html">View All</a>            
+        </div>
+      
+
+    </section>
+
+  <!-- Choose us Section -->
+    <div class="choose-us-box">
+        <div class="choose-us-container">
+            <h1 >Why Choose Us?</h1>
+            <p >A choice that makes the difference</p>
+           
+                <div class="choice choice-slider">
+                        <img  src="images/pexels-yan-krukau-8197544.jpg" />
+                     <div class="bg-color">
+
+                     </div>
+                     <div class="h3">
+                        <ul>
+                        <li><h3>100% of Students are employeed after degree</h3></li>
+                        <li><h3>Best Campus Life- Building a vibrant community of creative<br> and accomplished people.</h3></li>
+                        <li>  <h3>Recreation And Wellness Activities.</h3></li>
+                    </ul>
+                     </div>
+                       
+                 </div>
+
+                
+
+        </div>
+    </div>
+
+   
+
+    <!-- footer -->
+    <footer  >
+
+        <div class="address">
+            <div class="logo">
+                <div class="icon-name" >
+                <i class="fa fa-university" style="font-size: 24px;margin-right: 5px;" aria-hidden="true"></i>
+                <h3>EduGain University</h3>
+            </div>
+                <p>Choose The EduGain Experience</p>
+                <span>Join us to make your college experience unforgettable</span>
+            </div>
+        </div>
+
+        <div class="links">
+            <h3>Important Links</h3>
+            <div class="main" style="display: flex;justify-content: space-around;">
+                <div>
+                    <li><a href="index.html" style="text-decoration: none;color: white;">Home</a></li>
+                    <li><a href="about.html" style="text-decoration: none;color: white;">About us</a> </li>
+                    <li><a href="academic_unit.html" style="text-decoration: none;color: white;">Academic</a></li>
+                </div>
+                <div>
+                    <li><a href="contactus.html" style="text-decoration: none;color: white;">Contact us</a></li>
+                    <li><a href="login.html" style="text-decoration: none;color: white;">Account</a></li>
+                </div>
+            </div>
+            
+            
+        </div>
+
+        <div class="newsletter">
+            <h3>NewsLetter</h3>
+            <p>Get the Latest EduGain news devlieved to your inbox</p>
+            <input type="text" placeholder="Enter Your Email Address" style="padding: 5px;background: transparent;color: white;border-color: white;margin-right: 15px;" />
+            <i class="fa fa-paper-plane" style="cursor: pointer;" aria-hidden="true"></i>
+
+            <div class="social-media Link" style="display: flex;">
+                <i class="fa fa-instagram" style="font-size: 24px;margin-right: 25px;margin-top: 25px;cursor: pointer;" aria-hidden="true"></i>
+                <i class="fa fa-facebook-official" style="font-size: 24px;margin-right: 25px;margin-top: 25px;cursor: pointer;" aria-hidden="true"></i>
+                <i class="fa fa-linkedin-square" style="font-size: 24px;margin-right: 25px;margin-top: 25px;cursor: pointer;" aria-hidden="true"></i>
+
+            </div>
+        </div>
+    </footer>
+
+
+<script src="js/main.js"></script>
+</body>
+</html>

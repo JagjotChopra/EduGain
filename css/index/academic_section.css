@@ -1,0 +1,121 @@
+.academic-box{
+  width: 100%; 
+  margin: 50px 0px;
+  }
+
+
+.academic-container{
+    width: 80%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+ }
+
+ .academic-container h1{
+    text-align: center;
+     width: 100%;
+     margin-bottom: 70px;
+     color: #13325B;
+     font-family: 'Cinzel', serif;
+ }
+
+ .units{
+    display: flex;
+ }
+
+ .units .unit-list{
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    width: 25%;
+   
+    margin: 0px 15px;
+    transition: all 0.5s;
+ }
+
+ .units .unit-list:hover{
+   border: 5px solid #13325B;
+   cursor: pointer;
+}
+
+ .units .unit-list img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+ }
+
+ .units .unit-list h3{
+    width: 100%;
+    text-align: center;
+ }
+
+ .view-all-btn{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0px;
+ }
+
+ .view-all-btn a{
+   text-decoration: none;
+    color: black;
+     border: 2px solid black;padding: 15px 20px;
+ background-color: transparent;
+        cursor: pointer;
+        font-size: 16px;
+         font-family: 'Cinzel', serif;
+         box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+ }
+
+ .view-all-btn a:hover{
+   background-color: #13325B;
+   color: white;
+   border: 2px solid white;
+   transition: all 0.5s;
+ }
+
+@media only screen and (max-width: 850px) {
+   .units{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+   }
+
+   .units .unit-list{
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      width: 40%;
+     
+      margin: 10px 0px;
+   }
+   .units .unit-list img{
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+   }
+  
+   .units .unit-list h3{
+      width: 100%;
+      text-align: center;
+   }
+}
+@media only screen and (max-width: 486px) {
+   .units{
+      display: flex;
+      flex-direction: column;
+   }
+
+   .units .unit-list{
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      width: 100%;
+     
+      margin: 10px 0px;
+   }
+   .units .unit-list img{
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+   }
+  
+   .units .unit-list h3{
+      width: 100%;
+      text-align: center;
+   }
+}

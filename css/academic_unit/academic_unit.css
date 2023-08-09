@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.banner{
+    position: relative; 
+     width: 100%;
+     height: 50vh;
+     background-color: gray;
+}
+.banner img{
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+}
+.banner .bg{
+    position: absolute;
+    top: 0; 
+    width: 100%;
+    height: 50vh;
+    background-color: black;
+    opacity: 0.6;
+}
+.banner .course-name{
+    position: absolute;
+    bottom: 35px;
+    left: 35px;
+    color: white;
+}
+.banner .course-name h1{
+    font-family: 'Cinzel', serif;
+}
+
+.big-container{
+    display: flex;
+    justify-content: center; 
+    margin: 10vh 0px;
+}
+.big-container .container{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.big-container .container .card{
+    width: 30%;
+    border: 1px solid black; 
+    margin-bottom: 55px; 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    border: 0px;
+}
+.big-container .container .card .card-box{
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+}
+.big-container .container .card .card-box img{
+ width: 100%;
+ height: 250px;
+ object-fit: cover;
+}
+.big-container .container .card .card-box .content{
+    position: absolute;
+    top: 0;
+    right: -100%;
+     width: 100%;
+     height: 250px;
+     background-color: black;
+     opacity: 0.6;
+}
+.big-container .container .card .card-box .content-overBox{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    right: -100%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.big-container .container .card .card-box .content-overBox p{
+    color: white;
+    text-align: center;
+}
+.big-container .container .card .card-box .content-overBox a{
+    background-color: #13325B;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 850px) {
+    .big-container .container .card{
+        width: 40%;
+        justify-content: space-between;
+    }
+
+    .banner .course-name h1{
+        font-family: 'Cinzel', serif;
+        font-size: 24px;
+    }
+
+    
+}
+
+@media only screen and (max-width: 486px) {
+    .big-container .container .card{
+        width: 100%;
+    }
+
+    .banner .course-name h1{
+        font-family: 'Cinzel', serif;
+        font-size: 24px;
+    }
+}

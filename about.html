@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduGain University</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/index/nav.css" >
+    <link href="https://fonts.googleapis.com/css2?family=Bacasime+Antique&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+ 
+  <link rel="stylesheet" href="css/index/footer.css" >
+  <link rel="stylesheet" href="css/about/about.css" >
+  <style>
+    body{
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0; 
+     /* background-color: #FAF9F6; */
+    }
+    .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 15;
+}
+.dropdown:hover .dropdown-content {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  
+}
+    </style>
+</head>
+<body>
+  <!--Navbar-->
+  <nav >
+    <div class="logo">
+        <img src="images/nav-logo.png" />
+        <div class="logo-heading">
+        <span style="color: #13325B;font-size: 20px;">EduGain</span>
+        <span style="color: #9F7944;font-size: 22px;">University</span>
+       </div>
+        
+    </div>
+
+    <div class="navitems condition" >
+        <div onclick="closed()">
+            <i  class="fa fa-times cross" aria-hidden="true"></i>
+        </div>
+        <ul>
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="about.html" class="active">About us</a></li>
+            <li><a href="academic_unit.html">Academic Units</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="contactus.html">Contact us</a></li>
+            <li><a href="login.html" target="_blank">Account</a></li>
+            <!-- <li ><a><i class="fa fa-language" aria-hidden="true"></a></i></li> -->
+        </ul>
+    </div>
+
+    <div class="nav-bar-icon" onclick="show()">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+</nav>
+
+<div class="banner" style="position: relative;  width: 100%;height: 50vh;background-color: gray;">
+  <img src="images/about page/management.jpg" style="width: 100%;height: 50vh;object-fit: cover;" />
+
+  <div class="bg"
+      style="position: absolute;top: 0; width: 100%;height: 50vh;background-color: black;opacity: 0.6;">
+
+  </div>
+
+  <div class="course-name" style="position: absolute;bottom: 35px;left: 35px;color: white;">
+      <h1 style="font-family: 'Cinzel', serif;">About Us</h1>
+  </div>
+
+</div>
+
+<div class="big-container" style="display: flex;flex-direction: column;align-items: center;justify-content: center;margin-top: 25px;">
+  <div style="width: 80%;">
+    <h4 style="text-align: left"><em>eduGAIN provides an efficient, flexible way for participating federations, and
+        their affiliated users and services, to interconnect</em></h4>
+      <p style="font-family: 'Bacasime Antique', serif;">
+        Today, online services are crucial for research and education. Students, teachers, researchers and institution
+        staff rely on them for collaboration through many web services. This can be for e-learning, tea​ching and
+        conferencing, analysing and sharing data, accessing journals and libraries etc. Enabling easy and convenient
+        access to users is a key part of delivering a service. Service providers do not want the headaches associated
+        with issuing passwords to users, and the user does not want yet another password.</p>
+        <p style="font-family: 'Bacasime Antique', serif;">With just <strong>one trusted identity&nbsp;</strong>provided by user’s institution as part of an identity
+        federation participating in eduGAIN, users can access services from other participating federations. Even
+        better, it works with single sign-on (SSO), so that user needs to login only one time during a browser session.
+      </p>
+      <p style="font-family: 'Bacasime Antique', serif;">R&amp;E identity federations are typically deployed on a national level and use different architectures,
+        systems and policies. eduGAIN enables identity federations to interconnect, so that participating institutions
+        and services can collaborate without the need to establish individual bilateral connections.</p>
+  </div>
+  
+</div>
+
+
+<div class="container gallery-container p-3 ">
+  <div class="row p-3">
+    <div class="col-md-4">
+      <div class="card">
+        <img src="images/about page/our_story.jpg" class="card-img-top custom-img-size" />
+        <div class="card-body">
+          <h5 class="card-title headings" style="font-family: 'Cinzel', serif;">Our Story</h5>
+          <p class="card-text txt-clr" style="font-family: 'Bacasime Antique', serif;">The Edugain University (EU) was established in 1908 with just four professors
+            and 32 students, in a little house called Kya Rosa. Today, it is one of the largest research universities
+            in Canada. The University was born&nbsp;from a vision to create a space for quality education and for new
+            ideas to flourish. </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img src="images/about page/teaching.jpg" class="card-img-top custom-img-size" />
+        <div class="card-body">
+          <h5 class="card-title headings" style="font-family: 'Cinzel', serif;">Teaching and Learning</h5>
+          <p class="card-text txt-clr"  style="text-align: justify;font-family: 'Bacasime Antique', serif;">The culture of excellent teaching is firmly
+            entrenched at EU across all fields of study. Our committed academics have multiple approaches to teaching
+            to ensure that students with a variety of learning strengths succeed.&nbsp;Good teaching helps students to
+            excel and graduate in the minimum time set out for a degree.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img src="images/about page/management.jpg" class="card-img-top custom-img-size" />
+        <div class="card-body">
+          <h5 class="card-title headings" style="font-family: 'Cinzel', serif;">Management and Governance</h5>
+          <p class="card-text txt-clr" style="font-family: 'Bacasime Antique', serif;">The Edugain University is proud to be associated with a number of research
+            partnerships, academic development programmes and memoranda of understanding with many international
+            universities and institutions, corporate sponsorships, and social and community engagement and enhancement
+            projects.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row p-3">
+    <div class="col-md-4">
+      <div class="card">
+        <img src="images/about page/partners.jpg" class="card-img-top custom-img-size" />
+        <div class="card-body">
+          <h5 class="card-title headings" style="font-family: 'Cinzel', serif;">Support Services</h5>
+          <p class="card-text txt-clr" style="font-family: 'Bacasime Antique', serif;">At EU, we have a number of professional departments that form the University’s
+            support structure. These departments offer a range of services to the University community – from
+            psycho-social support to logistics, finance, information and research management, academic application and
+            enrolment, to sustainable development and greening initiatives.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img src="images/about page/careers.jpg" class="card-img-top custom-img-size" />
+        <div class="card-body">
+          <h5 class="card-title headings" style="font-family: 'Cinzel', serif;">Career Opportunities</h5>
+          <p class="card-text txt-clr" style="font-family: 'Bacasime Antique', serif;">We are ranked as one of the top universities worldwide. Our campuses provide
+            some of the most beautiful work environments with easy access to many lifestyle facilities to help you
+            achieve your personal and professional goals. We are home to a diverse cohort of local and international
+            academic, professional and support staff who all strive to ensure that EU continues to be renowned for its
+            quality, relevance and impact.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img src="images/about page/faculty.jpg" class="card-img-top custom-img-size" />
+        <div class="card-body">
+          <h5 class="card-title headings" style="font-family: 'Cinzel', serif;">Faculties</h5>
+          <p class="card-text txt-clr" style="font-family: 'Bacasime Antique', serif;">Our faculties are well-equipped with state-of-the-art research facilities,
+            laboratories, academic libraries, skills development and practical learning opportunities, and spaces to
+            learn or study socially or individually. Our seven campuses are customised for their purposes so that our
+            students, academic and research staff always have the best possible resources at their disposal to enable
+            their continued success.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- footer -->
+<footer  >
+
+  <div class="address">
+      <div class="logo">
+          <div class="icon-name" >
+          <i class="fa fa-university" style="font-size: 24px;margin-right: 5px;" aria-hidden="true"></i>
+          <h3>EduGain University</h3>
+      </div>
+          <p style="color: white;">Choose The EduGain Experience</p>
+          <span>Join us to make your college experience unforgettable</span>
+      </div>
+  </div>
+
+  <div class="links">
+      <h3>Important Links</h3>
+      <div class="main" style="display: flex;justify-content: space-around;">
+          <div>
+              <li><a href="index.html" style="text-decoration: none;color: white;">Home</a></li>
+              <li><a href="about.html" style="text-decoration: none;color: white;">About us</a> </li>
+              <li><a href="academic_unit.html" style="text-decoration: none;color: white;">Academic</a></li>
+          </div>
+          <div>
+              <li><a href="contactus.html" style="text-decoration: none;color: white;">Contact us</a></li>
+              <li><a href="login.html" style="text-decoration: none;color: white;">Account</a></li>
+          </div>
+      </div>
+      
+      
+  </div>
+
+  <div class="newsletter">
+      <h3>NewsLetter</h3>
+      <p style="color: white;" >Get the Latest EduGain news devlieved to your inbox</p>
+      <input type="text" placeholder="Enter Your Email Address" style="padding: 5px;background: transparent;color: white;border-color: white;margin-right: 15px;" />
+      <i class="fa fa-paper-plane" style="cursor: pointer;" aria-hidden="true"></i>
+
+      <div class="social-media Link" style="display: flex;">
+          <i class="fa fa-instagram" style="font-size: 24px;margin-right: 25px;margin-top: 25px;cursor: pointer;" aria-hidden="true"></i>
+          <i class="fa fa-facebook-official" style="font-size: 24px;margin-right: 25px;margin-top: 25px;cursor: pointer;" aria-hidden="true"></i>
+          <i class="fa fa-linkedin-square" style="font-size: 24px;margin-right: 25px;margin-top: 25px;cursor: pointer;" aria-hidden="true"></i>
+
+      </div>
+  </div>
+</footer>
+
+
+
+
+<script>
+  function show(){
+    var nm=document.getElementsByClassName("navitems");
+     nm[0].style.right="0%";
+}
+function closed(){
+    var nm=document.getElementsByClassName("navitems");
+     nm[0].style.right="-50%";
+}
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+crossorigin="anonymous"></script>
+</body>
+</html>

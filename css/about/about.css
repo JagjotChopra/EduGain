@@ -1,0 +1,61 @@
+
+.cover
+{
+    background: url(./src/main-img.jpg);
+    background-size:cover;
+    background-position: bottom left;
+}
+
+.headings{
+    color: #8B4513;
+}
+
+.about-us-image img{
+    width: 100%;
+    height: 10%;
+}
+.txt-clr, p{
+    color:#001f3f;
+    text-align: justify;
+}
+
+  /* Styling for the cards */
+  .card {
+    border: 1px solid #ddd;
+    border-radius: 0px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Styling for the card images */
+  .card-img-top {
+    border-radius: 0%;
+    cursor: pointer;
+  }
+
+  /* Styling for the card titles */
+  .card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+
+  /* Styling for the card content */
+  .card-text {
+    font-size: 16px;
+    text-align: justify;
+  }
+
+  .custom-img-size{
+    height: 200px; /* Set the desired height for the images */
+  object-fit: cover;
+    }
+    
+.btn{
+    border: none;
+}
